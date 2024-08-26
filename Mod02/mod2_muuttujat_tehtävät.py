@@ -71,7 +71,7 @@ naula_conv = leiviska * 20
 
 luoti_conv = (naula_conv + naula) * 32
 
-tulos = (luoti_conv + luoti) * 13.5
+tulos = (luoti_conv + luoti) * 13.3
 
 tulos_string = str(tulos)
 
@@ -87,8 +87,9 @@ third_number = str(random.randint(0,9))
 fourth_number = str(random.randint(1,6))
 fifth_number = str(random.randint(1,6))
 sixth_number = str(random.randint(1,6))
+seventh_number = str(random.randint(1,6))
 digits_first = first_number + second_number + third_number
-digits_second = fourth_number + fifth_number + sixth_number
+digits_second = fourth_number + fifth_number + sixth_number + seventh_number
 print("Your three digit code: " + digits_first + " and four digit code: " + digits_second)
 
 
