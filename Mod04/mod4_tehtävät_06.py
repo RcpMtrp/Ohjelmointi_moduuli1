@@ -18,5 +18,5 @@ while iterator < N:
     if x**2 + y**2 < 1:
         print("Piste on yksikköympyrässä.")
         #TODO: lisää n arvoon 1
-#TODO: tulosta kaavan mukaan laskettu piin likiarvo
+#TODO: tulosta kaavan mukaan laskettu piin likiarvo.
 
