@@ -26,7 +26,7 @@ while iterator < 5:
 
 
 count = 0
-#username. = input("Anna käyttäjätunnus: ")
+#username = input("Anna käyttäjätunnus: ")
 #password = input("Anna salasana: ")
 username = ""
 password = ""

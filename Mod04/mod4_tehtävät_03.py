@@ -13,7 +13,7 @@ if input_string != "":
 
     print(f"Pienin numero: {min_num}, suurin numero: {max_num}")
 else:
-    print("Ei lukuja syötetty.")
+    print("Ei lukuja syötetty")
 
 '''
 max_num = min_num = int(input("Syötä luku: "))
