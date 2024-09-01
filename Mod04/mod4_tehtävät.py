@@ -19,7 +19,7 @@ tuuma = float(input("Anna tuuman lukumäärä: "))
 
 cm = tuuma * 2.54
 
-while tuuma > 0:
+while tuuma >= 0:
     print(f"{cm}")
     tuuma = float(input("Anna tuuman lukumäärä: "))
     cm = tuuma * 2.54
@@ -32,6 +32,8 @@ Kirjoita peli, jossa tietokone arpoo kokonaisluvun väliltä 1..10.
 Kone arvuuttelee lukua pelaajalta siihen asti, kunnes tämä arvaa oikein.
 Kunkin arvauksen jälkeen ohjelma tulostaa tekstin Liian suuri arvaus, Liian pieni arvaus tai Oikein. 
 Huomaa, että tietokone ei saa vaihtaa lukuaan arvauskertojen välissä.
+
+'''
 '''
 player_guess = float(input("Arvaa koneen arpoma luku: "))
 
@@ -44,7 +46,7 @@ while player_guess != random_number:
     player_guess = float(input("Arvaa koneen arpoma luku: "))
 
 print("Arvasit oikein.")
-
+'''
 '''
 round = 100
 round_counter = 0total_rolls = 0
@@ -61,3 +63,24 @@ while round_counter < round:
 print(f"Kaksi kutosta saatiin keskimäärin {total_rolls / round} heitolla")
 
 '''
+'''
+Kirjoita ohjelma, joka kysyy käyttäjältä käyttäjätunnuksen ja salasanan.
+Jos jompikumpi tai molemmat ovat väärin, tunnus ja salasana kysytään uudelleen.
+Tätä jatketaan kunnes kirjautumistiedot ovat oikein tai väärät tiedot on syötetty viisi kertaa.
+Edellisessä tapauksessa tulostetaan Tervetuloa ja jälkimmäisessä Pääsy evätty. (Oikea käyttäjätunnus on python ja salasana rules).
+'''
+username = "python"
+password = "salasana"
+login = input("Anna käyttäjätunnus: ")
+password = "salasana"
+if login == "python":
+    input("Anna salasana: ")
+while login != "python" and password != "salasana":
+    print("Pääsy evätty.")
+
+
+
+print("Tervetuloa.")
+
+
+
