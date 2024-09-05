@@ -9,7 +9,7 @@ numbers = input("Anna luku tai lopeta painamalla Enter: ")
 #print(numbers)
 
 while numbers != "":
-    number_list.append(numbers)
+    number_list.append(int(numbers))
     numbers = input("Anna seuraava luku tai lopeta painamalla Enter: ")
 print(number_list)
 sorted_list = sorted(number_list, reverse=True)
