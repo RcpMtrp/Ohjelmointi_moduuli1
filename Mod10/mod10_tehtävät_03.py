@@ -31,7 +31,10 @@ class Talo:
         #if self.palohalytin_paalle:
            # print("Hissit eivät ole toiminnassa")
            # return
-        if 0 <= hissin_numero <= len(self.hissit):
+        if self.palohalytin_paalle:
+            print("Palohälytin on päällä, hissit eivät ole toiminnassa")
+            return
+        if 0 <= hissin_numero < len(self.hissit):
             hissi = self.hissit[hissin_numero]
             hissi.siirry_kerrokseen(kohdekerros)
             print(f"Hissi {hissin_numero} on kerroksessa {hissi.kerros}")
@@ -40,7 +43,7 @@ class Talo:
 
     def palohalytin(self, fire: bool):
         self.palohalytin_paalle = fire
-        if fire != False:
+        if fire:
             print("Palohälytin on käynnissä, kaikki hissit menevevät alimpaan kerrokseen.")
             for i, hissi in enumerate(self.hissit):
                 hissi.siirry_kerrokseen(0)
@@ -56,4 +59,4 @@ talo.aja_hissia(2, 7)
 talo.palohalytin(True)
 talo.aja_hissia(2, 7)
 talo.palohalytin(False)
-#talo.aja_hissia(2, 7)
+talo.aja_hissia(2, 7)
